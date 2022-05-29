@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(112, 112, 107);
+  
+}
+p{
+    font-size: 21px;
+}
+#watch {
+    font-family: 'Lobster', cursive;
+    color: rgb(30, 206, 59);
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* height: 1.4em;
+    width: 3.8em; */
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 7vw;
+    -webkit-text-stroke: 2px rgb(243, 253, 243);
+    text-shadow: 4px 4px 5px rgba(132, 132, 134, 0.4), 4px 4px 5px rgba(124, 126, 133, 0.4), 4px 4px 5px rgba(133, 135, 139, 0.4), 4px 4px 5px rgba(107, 109, 116, 0.4);
+}

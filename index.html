@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JAM DIGITAL</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/watch.css" />
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="shortcut icon" href="/img/icon.jpg" type="image/x-icon" />
+
+    </head>
+    <body>
+       
+         <div class="container">
+             <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                     <div class="card mt-5" style="width:25rem;">
+                      
+                       <div class="card-body">
+                         <h5 class="card-title text-center">RENUNGAN SINGKAT</h5>
+                         <p class="card-text text-center text-danger card bg-info fs-1">Ingat waktu terus berjalan oleh karena itu , gunakanlah waktu itu sebaik mungkin. agar tidak menyesal di kemudian hari.</p>                        
+                       </div>
+                       <h1 class="text-center " id="watch"></h1>
+                     </div>                  
+                </div>
+                <div class="col-4"></div>
+             </div>
+         </div>
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                function clock() {
+                    var now = new Date();
+                    var secs = ("0" + now.getSeconds()).slice(-2);
+                    var mins = ("0" + now.getMinutes()).slice(-2);
+                    var hr = now.getHours();
+                    var Time = hr + ":" + mins + ":" + secs;
+                    document.getElementById("watch").innerHTML = Time;
+                    requestAnimationFrame(clock);
+                }
+
+                requestAnimationFrame(clock);
+            });
+        </script>
+      
+    </body>
+    </body>
+</html>
+<!-- -->
